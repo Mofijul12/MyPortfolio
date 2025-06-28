@@ -384,3 +384,29 @@ footer .link-group a:hover{
     color: #fff;
     animation: pulse 3s infinite;
 }
+
+.card {
+    overflow: hidden;
+    /* Ensures zoomed image doesn't overflow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Zoom effect on image hover */
+.card:hover .card-img-top {
+    transform: scale(1.1);
+    /* Zoom in */
+}
+
+/* Optional: slight lift of the card on hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+

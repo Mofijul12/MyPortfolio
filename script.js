@@ -145,7 +145,7 @@ let mongoProgress = document.querySelector(".mongo"),
   mongoValue = document.querySelector(".mongo-progress");
 
 let mongoStartValue = 0,
-  mongoEndValue = 55,
+  mongoEndValue = 95,
   mongoSpeed = 30;
 
 let progressMongo = setInterval(() => {
